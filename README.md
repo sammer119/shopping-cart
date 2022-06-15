@@ -1,6 +1,6 @@
-# Shopping Cart app
+# Shopping Cart App
 
-Shopping cart app created with create-react-app and tailwind css.
+Shopping Cart App created with create-react-app and tailwind css.
 
 Functionality includes search products in store, adding items to the cart and removing items from the cart.
 Local storage to save cart when page is refresed.
