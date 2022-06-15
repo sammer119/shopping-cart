@@ -2,8 +2,8 @@
 
 Shopping Cart App created with create-react-app and tailwind css.
 
-Functionality includes search products in store, adding items to the cart and removing items from the cart.
-Local storage to save cart when page is refresed.
+Functionality includes the ability to search products in store, adding items to the cart and removing items from the cart.
+Local storage to save cart when page is refresed. Total cost of shopping cart is also calculated.
 
 ![Showcase](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/showcase.png). 
 
