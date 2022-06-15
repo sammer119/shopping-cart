@@ -1,4 +1,12 @@
-function CartItem({ product, setCart, cart, setTotal }) {
+function CartItem({
+  product,
+  setCart,
+  cart,
+  setTotal,
+  addToCart,
+  removeOneFromCart,
+  id,
+}) {
   function removeFromCart(arrID) {
     setTotal((prevState) => {
       return (prevState -=
@@ -6,31 +14,6 @@ function CartItem({ product, setCart, cart, setTotal }) {
     });
     setCart((prevState) => {
       return prevState.filter((x) => x.id !== arrID);
-    });
-  }
-
-  function incrementUp(arrID) {
-    setCart((prevState) => {
-      return prevState.map((x) =>
-        x.id === arrID ? { ...x, quantity: x.quantity++ } : x
-      );
-    });
-    setTotal((prevState) => {
-      return (prevState += product.price - product.discount);
-    });
-  }
-
-  function incrementDown(arrID) {
-    if (product.quantity === 1) {
-      return;
-    }
-    setCart((prevState) => {
-      return prevState.map((x) =>
-        x.id === arrID ? { ...x, quantity: x.quantity-- } : x
-      );
-    });
-    setTotal((prevState) => {
-      return (prevState -= product.price - product.discount);
     });
   }
 
@@ -50,20 +33,22 @@ function CartItem({ product, setCart, cart, setTotal }) {
           </p>
           <div className="flex justify-between items-center">
             <div className="flex w-20 px-2 pt-2">
-              <button
+              {/* <button
                 className={`border px-2 bg-gray-200 hover:bg-gray-300 ${
                   product.quantity === 1
                     ? "bg-gray-50 hover:bg-gray-50 cursor-default"
                     : ""
                 }`}
-                onClick={() => incrementDown(product.id)}
+                onClick={() => removeOneFromCart(product)}
               >
                 -
-              </button>
-              <p className="border-t border-b px-2">{product.quantity}</p>
+              </button> */}
+              <p className="border-t border-b border-l px-2">
+                {product.quantity}
+              </p>
               <button
                 className="border px-2 bg-gray-200 hover:bg-gray-300"
-                onClick={() => incrementUp(product.id)}
+                onClick={() => addToCart(product)}
               >
                 +
               </button>

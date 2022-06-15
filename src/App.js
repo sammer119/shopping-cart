@@ -1,11 +1,21 @@
 import Header from "./components/Header";
 import ShoppingCart from "./components/ShoppingCart";
 import ProductSection from "./components/ProductSection";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [cart, setCart] = useState([]);
-  const [total, setTotal] = useState(0);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("myCart")) ?? []
+  );
+  const [total, setTotal] = useState(
+    JSON.parse(localStorage.getItem("myTotal")) ?? 0
+  );
+
+  useEffect(() => {
+    localStorage.setItem("myCart", JSON.stringify(cart));
+    localStorage.setItem("myTotal", JSON.stringify(total));
+    cart.length === 0 ? setTotal(0) : setTotal(total);
+  });
 
   function addToCart(product) {
     // Add total price of product to total
@@ -27,8 +37,19 @@ function App() {
     }
   }
 
-  function resetCart() {
-    setCart([]);
+  function removeOneFromCart(product) {
+    console.log(cart);
+    if (product.quantity === 1) {
+      return;
+    }
+    setCart((prevState) => {
+      return prevState.map((x) =>
+        x.id === product.id ? { ...x, quantity: x.quantity++ } : x
+      );
+    });
+    setTotal((prevState) => {
+      return (prevState -= product.price - product.discount);
+    });
   }
 
   return (
@@ -47,6 +68,8 @@ function App() {
           setCart={setCart}
           total={total}
           setTotal={setTotal}
+          addToCart={addToCart}
+          removeOneFromCart={removeOneFromCart}
         />
       </div>
     </div>
