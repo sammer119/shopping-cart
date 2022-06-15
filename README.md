@@ -95,7 +95,7 @@ They list out some basic functionality to want to start with on their endeavour 
 For inspiration, the customer drew a wireframe of an online shop to help us understand what they were after. It is just
 for clarification purposes, and the customer gave us free hands make it work/look in any way we want.
 
-![pretty straight lines for a drawing]([ref.png](https://raw.githubusercontent.com/recruit-case/Frontend-Starter/master/ref.png))
+![pretty straight lines for a drawing](https://raw.githubusercontent.com/recruit-case/Frontend-Starter/master/ref.png)
 
 ## Task
 
