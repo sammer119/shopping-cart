@@ -1,6 +1,6 @@
-# Shopping Cart App
+# Hardware Store (shopping cart) Site
 
-Shopping Cart App created with create-react-app and tailwind css. 
+Site created with create-react-app and tailwind css. 
 
 Functionality includes the ability to search products in store, adding items to the cart and removing items from the cart. The shopping cart data is held in a js file which I pull into state. Local storage to save cart when page is refresed. Total cost of shopping cart is also calculated.
 
