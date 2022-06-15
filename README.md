@@ -1,6 +1,6 @@
-![Banner]([https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-banner.png]). 
-![Cart]([https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-cart.png]). 
-![Search component]([https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-main.png]). 
+![Banner](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-banner.png). 
+![Cart](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-cart.png). 
+![Search component](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-main.png). 
 
 
 # Getting Started with Create React App
