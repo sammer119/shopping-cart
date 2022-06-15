@@ -38,7 +38,7 @@ function ProductCard({
               quantity: 1,
             })
           }
-          className="bg-primary text-white text-md w-full py-[7px] mt-2 rounded-full font-semibold hover:shadow-lg hover:bg-gray-600 cursor-pointer hover:-translate-y-[2px] ease-in-out duration-150 active:-translate-y-[0px] active:bg-gray-800 tracking-wide"
+          className="bg-primary text-white text-md w-full py-[7px] mt-2 rounded-full font-semibold hover:shadow-lg hover:bg-gray-700 cursor-pointer hover:-translate-y-[2px] ease-in-out duration-150 active:-translate-y-[0px] active:bg-gray-800 tracking-wide"
         >
           Add to Cart
         </button>

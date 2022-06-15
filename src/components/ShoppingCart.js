@@ -1,14 +1,7 @@
 import { RiShoppingCart2Line } from "react-icons/ri";
 import CartItem from "./CartItem";
 
-function ShoppingCart({
-  cart,
-  setCart,
-  total,
-  setTotal,
-  addToCart,
-  removeOneFromCart,
-}) {
+function ShoppingCart({ cart, setCart, total, setTotal, addToCart }) {
   //   function calcTotal() {
   //     let sum = cart.reduce((accumulator, currVal) => {
   //       return (
@@ -49,7 +42,6 @@ function ShoppingCart({
               total={total}
               setTotal={setTotal}
               addToCart={addToCart}
-              removeOneFromCart={removeOneFromCart}
             />
           ))}
           <div className="flex justify-between items-center w-full p-4 bottom-0 sticky z-20 overflow-auto bg-white border-t-2 border-gray-200 self-center">

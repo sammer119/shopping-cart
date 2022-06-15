@@ -15,7 +15,7 @@ function App() {
     localStorage.setItem("myCart", JSON.stringify(cart));
     localStorage.setItem("myTotal", JSON.stringify(total));
     cart.length === 0 ? setTotal(0) : setTotal(total);
-  });
+  }, [cart, total]);
 
   function addToCart(product) {
     // Add total price of product to total
@@ -37,21 +37,6 @@ function App() {
     }
   }
 
-  function removeOneFromCart(product) {
-    console.log(cart);
-    if (product.quantity === 1) {
-      return;
-    }
-    setCart((prevState) => {
-      return prevState.map((x) =>
-        x.id === product.id ? { ...x, quantity: x.quantity++ } : x
-      );
-    });
-    setTotal((prevState) => {
-      return (prevState -= product.price - product.discount);
-    });
-  }
-
   return (
     <div>
       <Header />
@@ -69,7 +54,6 @@ function App() {
           total={total}
           setTotal={setTotal}
           addToCart={addToCart}
-          removeOneFromCart={removeOneFromCart}
         />
       </div>
     </div>

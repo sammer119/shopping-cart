@@ -38,8 +38,8 @@ function ProductSection({ addToCart, setTotal }) {
         />
         <div className="absolute bottom-0 bg-gradient-to-t from-primary ... p-28 w-full rounded-b-xl flex flex-col items-center justify-center m-auto">
           <div className="flex items-center mt-20">
-            <MdHardware size={40} color="#ffffff" className="mr-2" />
-            <h1 className="text-white text-3xl font-semibold ">
+            <MdHardware size={50} color="#ffffff" className="mr-2" />
+            <h1 className="text-white text-5xl font-semibold ">
               Smart Hardware Shop
             </h1>
           </div>
@@ -53,7 +53,7 @@ function ProductSection({ addToCart, setTotal }) {
         <input
           type="text"
           placeholder="Search products..."
-          className="py-2 px-4 rounded-full border border-solid border-gray-300 my-2 flex-grow shadow-sm outline-none"
+          className="py-2 px-4 rounded-full border border-solid border-gray-300 my-2 flex-grow shadow-sm hover:shadow-lg outline-none"
           onChange={(event) => {
             setSearch(event.target.value);
           }}
