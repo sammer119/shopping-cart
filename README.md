@@ -1,9 +1,8 @@
-# Shopping Cart App
+# Hardware Store (shopping cart) Site
 
-Shopping Cart App created with create-react-app and tailwind css.
+Site created with create-react-app and tailwind css. 
 
-Functionality includes the ability to search products in store, adding items to the cart and removing items from the cart.
-Local storage to save cart when page is refresed. Total cost of shopping cart is also calculated.
+Functionality includes the ability to search products in store, adding items to the cart and removing items from the cart. The shopping cart data is held in a js file which I pull into state. Local storage to save cart when page is refresed. Total cost of shopping cart is also calculated.
 
 ![Showcase](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/showcase.png). 
 
@@ -16,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
