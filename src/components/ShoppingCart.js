@@ -26,7 +26,9 @@ function ShoppingCart({ cart, setCart, total, setTotal, addToCart }) {
           <div className="border-[2px] rounded-full p-4 border-primary my-6 shadow-md">
             <RiShoppingCart2Line size={60} color="#2B4141" />
           </div>
-          <p className="text-lg">There are no items in your cart!</p>
+          <p className="text-lg text-gray-500">
+            There are no items in your cart!
+          </p>
         </div>
       )}
       {/* Cart Items */}

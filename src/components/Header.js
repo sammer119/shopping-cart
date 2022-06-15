@@ -12,7 +12,7 @@ function Header() {
         </div>
         <p
           onClick={() => alert("Page coming soon... 🚧")}
-          className="text-lg text-gray-50 pr-6s cursor-pointer"
+          className="text-lg text-gray-50 pr-6 cursor-pointer hover:text-gray-200"
         >
           Contact Us
         </p>
