@@ -23,7 +23,7 @@ function ShoppingCart({
   //   }, [cart]);
 
   return (
-    <div className="basis-1/3 m-2 bg-white border-solid border rounded-lg flex flex-col items-center min-h-64 max-h-[520px] sticky top-[100px] overflow-scroll shadow-sm">
+    <div className="basis-1/3 m-2 bg-white border-solid border rounded-lg flex flex-col items-center min-h-64 max-h-[520px] sticky top-[100px] overflow-scroll overflow-x-hidden shadow-sm">
       <div className="bg-primary text-white w-full flex items-center justify-center rounded-t-lg sticky top-0">
         <h2 className="text-xl py-2">Your Cart</h2>
       </div>
