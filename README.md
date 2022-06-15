@@ -1,6 +1,11 @@
-![Banner](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-banner.png). 
-![Cart](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-cart.png). 
-![Search component](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-main.png). 
+# Shopping Cart app
+
+Shopping cart app created with create-react-app and tailwind css.
+
+Functionality includes search products in store, adding items to the cart and removing items from the cart.
+Local storage to save cart when page is refresed.
+
+![Showcase](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/showcase.png). 
 
 
 # Getting Started with Create React App
