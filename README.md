@@ -1,3 +1,8 @@
+![Banner](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-banner.png). 
+![Cart](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-cart.png). 
+![Search component](https://raw.githubusercontent.com/sammer119/shopping-cart/master/public/screen-main.png). 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
