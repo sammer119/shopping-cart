@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    name: "Gorgeous Wooden Bike",
+    name: "Immaculate Wooden Bike",
     description:
       "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
     defaultImage: "http://placeimg.com/640/480/cats",
@@ -11,7 +11,7 @@ export default [
       "http://placeimg.com/640/480/cats",
       "http://placeimg.com/640/480/cats",
     ],
-    price: 11545.71,
+    price: 12438.23,
     discount: 59,
   },
   {

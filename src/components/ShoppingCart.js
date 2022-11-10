@@ -37,11 +37,9 @@ function ShoppingCart({ cart, setCart, total, setTotal, addToCart }) {
           {cart.map((product) => (
             <CartItem
               key={product.id}
-              id={product.id}
               product={product}
               setCart={setCart}
               cart={cart}
-              total={total}
               setTotal={setTotal}
               addToCart={addToCart}
             />

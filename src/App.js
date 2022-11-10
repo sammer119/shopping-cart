@@ -42,11 +42,7 @@ function App() {
       <Header />
       <div className="flex m-auto pt-8 max-w-7xl justify-between ">
         {/* left part of screen */}
-        <ProductSection
-          addToCart={addToCart}
-          total={total}
-          setTotal={setTotal}
-        />
+        <ProductSection addToCart={addToCart} />
         {/* right part of screen */}
         <ShoppingCart
           cart={cart}

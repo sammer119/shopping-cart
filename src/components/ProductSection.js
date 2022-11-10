@@ -3,7 +3,7 @@ import productList from "../productList";
 import ProductCard from "./ProductCard";
 import { MdHardware } from "react-icons/md";
 
-function ProductSection({ addToCart, setTotal }) {
+function ProductSection({ addToCart }) {
   const [products, setProducts] = useState(productList);
   const [search, setSearch] = useState("");
   const [noResult, setNoResult] = useState("");
@@ -70,7 +70,7 @@ function ProductSection({ addToCart, setTotal }) {
       <div className="grid grid-cols-3 gap-8">{productCards}</div>
       {products.length === 0 && (
         <div className="p-2">
-          <p>{`No results could be found for '${noResult}'.`}</p>
+          <p className="font-semibold">{`No results could be found for '${noResult}'.`}</p>
         </div>
       )}
     </div>
